@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
+    {% endblock %}
+
+    {% block content %}
+        <h1 class="mt-4 pt-5" style="color:black"><strong>{{ content }}</strong></h1>
+    {% endblock %}
+
+    {% block footer %}
+    <footer class="py-4 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Здесь могла быть ваша реклама. Звонитя, приходити - ВЕЛКАМ!</p>
+        </div>
+    </footer>
+    {% endblock %}
